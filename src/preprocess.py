@@ -11,7 +11,7 @@ def load_data(path):
 
 def prepare_features(df):
 
-    X = df[['Min Price','Max Price']]
-    y = df['Modal Price']
+    X = df[['Min_x0020_Price','Max_x0020_Price']]
+    y = df['Modal_x0020_Price']
 
     return X, y
