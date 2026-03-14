@@ -4,6 +4,8 @@ def load_data(path):
 
     df = pd.read_csv(path)
 
+    df["Arrival_Date"] = pd.to_datetime(df["Arrival_Date"])
+
     df = df.dropna()
 
     return df
@@ -11,7 +13,8 @@ def load_data(path):
 
 def prepare_features(df):
 
-    X = df[['Min_x0020_Price','Max_x0020_Price']]
-    y = df['Modal_x0020_Price']
+    X = df[["Min_x0020_Price","Max_x0020_Price"]]
+
+    y = df["Modal_x0020_Price"]
 
     return X, y
