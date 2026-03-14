@@ -4,7 +4,7 @@ def load_data(path):
 
     df = pd.read_csv(path)
 
-    df["Arrival_Date"] = pd.to_datetime(df["Arrival_Date"])
+    df["Arrival_Date"] = pd.to_datetime(df["Arrival_Date"], dayfirst=True)
 
     df = df.dropna()
 
