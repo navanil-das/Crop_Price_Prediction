@@ -7,7 +7,12 @@ from sklearn.tree import DecisionTreeRegressor
 from sklearn.ensemble import RandomForestRegressor, GradientBoostingRegressor
 from preprocess import load_data, prepare_features
 
-df = load_data("../data/crop_prices.csv")
+from pathlib import Path
+
+BASE_DIR = Path(__file__).resolve().parent.parent
+data_path = BASE_DIR / "data" / "crop_prices.csv"
+
+df = load_data(data_path)
 X, y = prepare_features(df)
 models = {
     "Linear Regression": LinearRegression(),
@@ -36,5 +41,10 @@ for name, model in models.items():
 
 print("\nBest Model:", best_model_name)
 best_model.fit(X, y)
-joblib.dump(best_model, "../models/price_model.pkl")
+from pathlib import Path
+
+BASE_DIR = Path(__file__).resolve().parent.parent
+model_path = BASE_DIR / "models" / "price_model.pkl"
+
+joblib.dump(best_model, model_path)
 print("\nModel saved successfully to models/price_model.pkl")
