@@ -13,8 +13,25 @@ def load_data(path):
 
 def prepare_features(df):
 
-    X = df[["Min_x0020_Price","Max_x0020_Price"]]
+    
+    df_model = df[[
+        "State",
+        "Market",
+        "Commodity",
+        "Min_x0020_Price",
+        "Max_x0020_Price",
+        "Modal_x0020_Price"
+    ]]
 
-    y = df["Modal_x0020_Price"]
+    # One-hot encode categorical variables
+    df_model = pd.get_dummies(
+        df_model,
+        columns=["State", "Market", "Commodity"],
+        drop_first=True
+    )
+
+    X = df_model.drop("Modal_x0020_Price", axis=1)
+
+    y = df_model["Modal_x0020_Price"]
 
     return X, y
