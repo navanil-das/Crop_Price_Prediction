@@ -106,6 +106,6 @@ app/streamlit_app.py
 ```
 ## 👨‍💻 Author
 
-Navanil Das
+### Navanil Das
 
 Machine Learning & Cybersecurity Enthusiast
