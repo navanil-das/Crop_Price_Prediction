@@ -1,177 +1,110 @@
-# 🌾 Crop_Price_Prediction
+# 🌾 Crop Price Prediction
+![Python](https://img.shields.io/badge/Python-3.10-blue)
+![Streamlit](https://img.shields.io/badge/Streamlit-App-red)
 
-A Machine Learning web application that predicts the market price of agricultural crops based on multiple factors such as crop type, state, district, market conditions, and historical data.
+A Machine Learning web application that predicts agricultural crop prices using historical market data.
+The project integrates data preprocessing, machine learning modeling, and a Streamlit dashboard for real-time predictions.
 
-The project combines data preprocessing, machine learning modeling, and an interactive Streamlit UI to allow users to easily estimate crop prices.
+## 🚀 Features
 
-🚀 Live Demo
+- 🌱 Crop selection input
 
-If deployed on Streamlit Cloud:
+- 🌍 Location-based prediction (State, District, Market)
 
-https://your-app-name.streamlit.app
-📌 Features
+- ⚙️ Advanced settings panel
 
-📊 Crop Price Prediction using Machine Learning
+- 📊 Interactive Streamlit dashboard
 
-🌍 Location-based prediction (State, District, Market)
+- 🧠 Trained ML model for price prediction
 
-🌱 Crop selection input
+- 🖥️ User-friendly interface
 
-⚙️ Advanced settings panel
+## 🧠 Machine Learning Workflow
 
-📈 Interactive Streamlit dashboard
+1. Data Collection
 
-🧠 Trained ML model for price prediction
+2. Data Cleaning
 
-🖥️ User-friendly interface
+3. Feature Engineering
 
-🧠 Machine Learning Workflow
+4. Encoding Categorical Variables
 
-Data Collection
+5. Model Training
 
-Data Cleaning
+6. Model Evaluation
 
-Feature Engineering
+7. Model Deployment with Streamlit
 
-Encoding Categorical Variables
+## 🛠️ Tech Stack
+### Programming
 
-Model Training
+- Python
 
-Model Evaluation
+### Machine Learning
 
-Model Deployment with Streamlit
+- Scikit-learn
 
-🛠️ Tech Stack
-Programming
+- Pandas
 
-Python
+- NumPy
 
-Machine Learning
+### UI / Visualization
 
-Scikit-learn
+- Streamlit
 
-Pandas
+### Deployment
 
-NumPy
+- Streamlit Cloud
 
-Visualization / UI
+- GitHub
 
-Streamlit
-
-Deployment
-
-Streamlit Cloud
-
-GitHub
-
-📂 Project Structure
-crop_price_prediction/
+## 📂 Project Structure
+```
+crop_price_prediction
 │
-├── app/
-│   └── streamlit_app.py        # Streamlit user interface
+├── app
+│   └── streamlit_app.py
 │
-├── models/
-│   └── trained_model.pkl       # Saved ML model
+├── models
+│   └── trained_model.pkl
 │
-├── data/
-│   └── crop_data.csv           # Dataset used for training
+├── data
+│   └── crop_data.csv
 │
-├── notebooks/
-│   └── model_training.ipynb    # Model experimentation
+├── notebooks
+│   └── model_training.ipynb
 │
-├── requirements.txt            # Python dependencies
+├── requirements.txt
 │
-└── README.md                   # Project documentation
-⚙️ Installation
+└── README.md
+```
+## ▶️ Run Locally
 
-Clone the repository:
-
-git clone https://github.com/yourusername/crop_price_prediction.git
-cd crop_price_prediction
-
-Create virtual environment (recommended):
-
-python -m venv venv
-
-Activate environment
-
-Windows
-
-venv\Scripts\activate
-
-Linux / Mac
-
-source venv/bin/activate
-
-Install dependencies
-
+Install dependencies:
+```
 pip install -r requirements.txt
-▶️ Running the Application
-
-Run the Streamlit app locally:
-
+```
+Run the Streamlit app:
+```
 streamlit run app/streamlit_app.py
-
-Then open in browser:
-
+```
+Open browser:
+```
 http://localhost:8501
-☁️ Deployment (Streamlit Cloud)
+```
+## ☁️ Deployment
 
-Push the project to GitHub
+### Deploy using Streamlit Cloud:
 
-Go to Streamlit Cloud
+1. Push code to GitHub
 
-Connect your GitHub repository
+2. Connect repository to Streamlit Cloud
 
-Select:
-
+3. Select:
+```
 app/streamlit_app.py
-
-Add requirements.txt
-
-Streamlit will automatically install dependencies and deploy the app.
-
-📊 Example Inputs
-Input	Example
-Crop	Rice
-State	West Bengal
-District	Hooghly
-Market	Arambagh
-
-Output:
-
-Predicted Price: ₹XXXX per quintal
-📈 Future Improvements
-
-Add more ML models (XGBoost, LightGBM)
-
-Improve prediction accuracy
-
-Add real-time market price APIs
-
-Build historical price visualization
-
-Add mobile-friendly UI
-
-🤝 Contributing
-
-Contributions are welcome.
-
-Steps:
-
-Fork the repository
-
-Create a new branch
-
-Commit changes
-
-Submit a pull request
-
-📜 License
-
-This project is licensed under the MIT License.
-
-👨‍💻 Author
+```
+## 👨‍💻 Author
 
 Navanil Das
 
