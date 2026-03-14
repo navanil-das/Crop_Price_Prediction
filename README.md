@@ -1,6 +1,8 @@
 # 🌾 Crop Price Prediction
 ![Python](https://img.shields.io/badge/Python-3.10-blue)
 ![Streamlit](https://img.shields.io/badge/Streamlit-App-red)
+## 🔗 Link:
+https://croppriceprediction-lpcpihfuevtfvvzajowv3r.streamlit.app/
 
 A Machine Learning web application that predicts agricultural crop prices using historical market data.
 The project integrates data preprocessing, machine learning modeling, and a Streamlit dashboard for real-time predictions.
