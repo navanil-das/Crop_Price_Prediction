@@ -62,23 +62,29 @@ https://croppriceprediction-lpcpihfuevtfvvzajowv3r.streamlit.app/
 
 ## 📂 Project Structure
 ```
-crop_price_prediction
+Crop_Price_Prediction
 │
 ├── app
-│   └── streamlit_app.py
-│
-├── models
-│   └── trained_model.pkl
+│   └── streamlit_app.py        # Streamlit web application
 │
 ├── data
-│   └── crop_data.csv
+│   └── crop_prices.csv         # Dataset used for training/prediction
+│
+├── models
+│   └── price_model.pkl         # Trained machine learning model
 │
 ├── notebooks
-│   └── model_training.ipynb
+│   └── eda_analysis.ipynb      # Exploratory Data Analysis notebook
 │
-├── requirements.txt
+├── src
+│   ├── preprocess.py           # Data preprocessing pipeline
+│   ├── train_model.py          # Model training script
+│   └── predict.py              # Prediction utilities
 │
-└── README.md
+├── .gitignore                  # Files ignored by Git
+├── LICENSE                     # Project license
+├── README.md                   # Project documentation
+└── requirements.txt            # Python dependencies
 ```
 ## ▶️ Run Locally
 
